@@ -12,6 +12,8 @@ public class App
 {
     public static void main( String[] args )
     {
+    	 //wsdl2java -ant -client -d C:\Users\rajeev.jha\Desktop\jar\stub HelloService_wsdl.wsdl  ---- genrate client from wsdl
+    	
     	JaxWsProxyFactoryBean factory = new JaxWsProxyFactoryBean();
     	factory.setServiceClass(HelloService.class);
     	factory.setAddress("http://localhost:8080/spring-cxf/services/HelloService");
